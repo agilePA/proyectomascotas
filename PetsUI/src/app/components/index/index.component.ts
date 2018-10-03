@@ -22,9 +22,10 @@ export class IndexComponent implements OnInit {
   constructor(public serv: PetsService) { }
 
   ngOnInit() {
-  	this.serv.getAll().subscribe(data => {
-  		this.dataSource = data;
-  		console.log(data);
+      alert();
+    this.serv.getAll().subscribe(data => {
+      this.dataSource = data;
+      console.log(data);
   	});
   }
 

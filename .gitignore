@@ -37,3 +37,5 @@ PetsUI/typings
 # System Files
 PetsUI/.DS_Store
 PetsUI/Thumbs.db
+
+PetsAPI/.vs/*

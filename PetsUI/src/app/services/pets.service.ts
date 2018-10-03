@@ -10,7 +10,7 @@ export class PetsService {
   url: string;
 
   constructor(public http: HttpClient) {
-  	this.url = environment.petsAPI + '/api/Mascotas';
+  	this.url = environment.petsAPI + '/api/mascotas';
   }
 
   add(data: any) {
