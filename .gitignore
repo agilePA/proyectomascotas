@@ -1,0 +1,39 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+PetsUI/dist
+PetsUI/tmp
+PetsUI/out-tsc
+
+# dependencies
+PetsUI/node_modules
+
+# IDEs and editors
+PetsUI/.idea
+PetsUI/.project
+PetsUI/.classpath
+PetsUI/.c9/
+PetsUI/*.launch
+PetsUI/.settings/
+PetsUI/*.sublime-workspace
+
+# IDE - VSCode
+PetsUI/.vscode/*
+PetsUI/!.vscode/settings.json
+PetsUI/!.vscode/tasks.json
+PetsUI/!.vscode/launch.json
+PetsUI/!.vscode/extensions.json
+
+# misc
+PetsUI/.sass-cache
+PetsUI/connect.lock
+PetsUI/coverage
+PetsUI/libpeerconnection.log
+PetsUI/npm-debug.log
+PetsUI/yarn-error.log
+PetsUI/testem.log
+PetsUI/typings
+
+# System Files
+PetsUI/.DS_Store
+PetsUI/Thumbs.db
