@@ -40,10 +40,12 @@ export class CreateComponent implements OnInit {
   ];
 
   originFormControl = new FormControl('', [Validators.required]);
+  diseasesFormControl = new FormControl('', [Validators.required]);
+  desFormControl = new FormControl('', [Validators.required]);
 
   matcher = new MyErrorStateMatcher();
 
-  constructor(public petServ: PetsService, public formBuilder: FormBuilder) {
+  constructor(public petServ: PetsService, public formBuilder: FormBuilder) { 
   	this.validators = new FormGroup({
       name: new FormControl('', Validators.required),
       species: new FormControl('', Validators.required),
@@ -60,13 +62,21 @@ export class CreateComponent implements OnInit {
   }
 
   submit() {
-    console.log(this.validators.value);
-    //this.petServ.add(this.validators.value).subscribe();
+    var data = {
+      name : this.nameFormControl.value,
+      species : this.specieFormControl.value,
+      breed : this.breedFormControl.value,
+      age : this.ageFormControl.value,
+      sex : this.sexFormControl.value.type,
+      origin : this.originFormControl.value,
+      diseases : this.diseasesFormControl.value,
+      description : this.desFormControl.value,
+    }
+    console.log(data);
+    this.petServ.add(data).subscribe();
   }
 
   valueChanged() {
-   alert();
-    console.log(this.value);
     this.changeValue.emit(this.value);
   }
 

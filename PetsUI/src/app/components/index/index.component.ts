@@ -22,7 +22,6 @@ export class IndexComponent implements OnInit {
   constructor(public serv: PetsService) { }
 
   ngOnInit() {
-      alert();
     this.serv.getAll().subscribe(data => {
       this.dataSource = data;
       console.log(data);
