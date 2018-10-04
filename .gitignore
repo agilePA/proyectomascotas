@@ -6,7 +6,7 @@ PetsUI/tmp
 PetsUI/out-tsc
 
 # dependencies
-#PetsUI/node_modules
+PetsUI/node_modules
 
 # IDEs and editors
 PetsUI/.idea
