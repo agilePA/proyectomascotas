@@ -63,14 +63,14 @@ export class CreateComponent implements OnInit {
 
   submit() {
     var data = {
-      name : this.nameFormControl.value,
-      species : this.specieFormControl.value,
-      breed : this.breedFormControl.value,
-      age : this.ageFormControl.value,
-      sex : this.sexFormControl.value.type,
-      origin : this.originFormControl.value,
-      diseases : this.diseasesFormControl.value,
-      description : this.desFormControl.value,
+      nombre : this.nameFormControl.value,
+      especie : this.specieFormControl.value,
+      raza : this.breedFormControl.value,
+      edad : this.ageFormControl.value,
+      sexo : this.sexFormControl.value.type,
+      origen : this.originFormControl.value,
+      enfermedades : this.diseasesFormControl.value,
+      descripcion : this.desFormControl.value,
     }
     console.log(data);
     this.petServ.add(data).subscribe();
