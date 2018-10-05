@@ -1,0 +1,58 @@
+
+<br>
+<mat-card class="card">
+  <mat-card-title>
+    Registro de Mascotas
+  </mat-card-title>
+
+  <mat-card-content>
+    <mat-form-field class="full-width-input">
+      <input matInput placeholder="Nombre" 
+      type="text" name="nombre" [(ngModel)]="mascota.nombre"/>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select placeholder="Especie" [(ngModel)]="mascota.especie">
+          <mat-option *ngFor="let esp of especies" [value]="esp">
+            {{esp}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    <mat-form-field class="full-width-input">
+      <input matInput placeholder="Raza" 
+      type="text" name="raza" [(ngModel)]="mascota.raza"/>
+    </mat-form-field>
+    <mat-form-field class="full-width-input">
+      <input matInput placeholder="Edad" 
+      type="number" name="edad" [(ngModel)]="mascota.edad"/>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select placeholder="Sexo" [(ngModel)]="mascota.sexo">
+          <mat-option *ngFor="let sex of sexos" [value]="sex">
+            {{sex}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    <mat-form-field class="full-width-input">
+      <input matInput placeholder="Origen" 
+      type="text" name="origen" [(ngModel)]="mascota.procedencia"/>
+    </mat-form-field>
+    <mat-form-field class="full-width-input">
+      <input matInput placeholder="Enfermedades" 
+      type="text" name="enfermedades" [(ngModel)]="mascota.enfermedades"/>
+    </mat-form-field>
+    <mat-form-field class="full-width-input">
+      <input matInput placeholder="Descripcion" 
+      type="text" name="descripcion" [(ngModel)]="mascota.descripcion"/>
+    </mat-form-field>
+   
+  </mat-card-content>
+
+  <mat-card-actions class="card-action">
+    <button mat-stroked-button 
+    color="primary" (click)="yesAction()">Aceptar</button>
+    <button *ngIf="mascota.sexo && mascota.edad " mat-stroked-button 
+    color="primary" >Cancelar</button>
+  </mat-card-actions>
+
+</mat-card>

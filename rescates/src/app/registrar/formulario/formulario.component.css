@@ -1,0 +1,15 @@
+.card {
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .card-action {
+    text-align: center;
+  }
+  
+  .full-width-input {
+    width: 100%;
+  }
+  button{
+      margin:0 15px;
+  }
