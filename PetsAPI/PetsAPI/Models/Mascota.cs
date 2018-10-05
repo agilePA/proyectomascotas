@@ -14,17 +14,18 @@ namespace PetsAPI.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
+        [StringLength(50, ErrorMessage = "Nombre no puede tener mas de 50 caracteres.")]
         public string Nombre { get; set; }
         [Required]
+        [StringLength(50, ErrorMessage = "Raza no puede tener mas de 50 caracteres.")]
         public string Raza { get; set; }
         [Required]
+        [StringLength(50, ErrorMessage = "Especie no puede tener mas de 50 caracteres.")]
         public string Especie { get; set; }
         [Required]
-        public int Edad { get; set; }
+        public string Edad { get; set; }
         [Required]
         public string Sexo { get; set; }
-        [Required]
-        public string Origen { get; set; }
         [Required]
         public string Enfermedades { get; set; }
         public string Descripcion { get; set; }

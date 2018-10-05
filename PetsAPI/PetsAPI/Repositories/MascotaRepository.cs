@@ -18,12 +18,6 @@ namespace PetsAPI.Repositories
 
         public void Create(Mascota mascota)
         {
-            mascota.Imagen = "hola mascota";
-            mascota.Estado = true;
-            mascota.Created_at = DateTime.Today;
-            mascota.Updated_at = DateTime.Today;
-            mascota.Procedencia = "Hola mundo";
-
             this.MascotasDbContext.Mascotas.Add(mascota);
             this.MascotasDbContext.SaveChanges();
         }

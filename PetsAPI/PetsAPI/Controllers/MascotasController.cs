@@ -86,6 +86,10 @@ namespace PetsAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> PostMascota([FromBody] Mascota mascota)
         {
+            mascota.Estado = true;
+            mascota.Created_at = DateTime.Today;
+            mascota.Updated_at = DateTime.Today;
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);

@@ -58,22 +58,36 @@ export class CreateComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    this.validators = new FormGroup({
+      name: new FormControl('', Validators.required),
+      species: new FormControl('', Validators.required),
+      breed: new FormControl('', Validators.required),
+      age: new FormControl('', Validators.required),
+      sex: new FormControl('', Validators.required),
+      origin: new FormControl('', Validators.required),
+      diseases: new FormControl('', Validators.required),
+    });
   }
 
   submit() {
-    var data = {
-      nombre : this.nameFormControl.value,
-      especie : this.specieFormControl.value,
-      raza : this.breedFormControl.value,
-      edad : this.ageFormControl.value,
-      sexo : this.sexFormControl.value.type,
-      origen : this.originFormControl.value,
-      enfermedades : this.diseasesFormControl.value,
-      descripcion : this.desFormControl.value,
-    }
+    alert(this.validators.get("name").valid);
+    if (this.nameFormControl.value != undefined) {
+        var data = {
+          nombre : this.nameFormControl.value,
+          especie : this.specieFormControl.value,
+          raza : this.breedFormControl.value,
+          edad : this.ageFormControl.value,
+          sexo : this.sexFormControl.value.type,
+          origen : this.originFormControl.value,
+          enfermedades : this.diseasesFormControl.value,
+          descripcion : this.desFormControl.value,
+        }
+
+        this.petServ.add(data).subscribe();
+     }
+
+    
     console.log(data);
-    this.petServ.add(data).subscribe();
   }
 
   valueChanged() {

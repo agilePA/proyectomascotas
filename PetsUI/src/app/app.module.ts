@@ -24,18 +24,22 @@ import {
   MatSelectModule
 } from '@angular/material';
 
+import { AppRoutingModule } from './app-routing.module';
 import { IndexComponent } from './components/index/index.component';
 import { CreateComponent } from './components/create/create.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormInputComponent } from './components/form-input/form-input.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FieldErrorDisplayComponent } from './field-error-display/field-error-display.component';
+import { MaterialModule } from "./material.module";
 
-const appRoutes: Routes = [
-  { path: 'list_pets', component: IndexComponent},
-  { path: 'create_pet', component: CreateComponent},
-  //{ path: 'third-page', component: ThirdPageComponent}
-];
+import { InputComponent } from "./components/input/input.component";
+import { ButtonComponent } from "./components/button/button.component";
+import { SelectComponent } from "./components/select/select.component";
+import { DynamicFieldDirective } from "./components/dynamic-field/dynamic-field.directive";
+import { DynamicFormComponent } from "./components/dynamic-form/dynamic-form.component";
+import { TestComponent } from "./components/test/test.component";
 
 @NgModule({
   declarations: [
@@ -43,10 +47,18 @@ const appRoutes: Routes = [
     NavBarComponent,
     IndexComponent,
     CreateComponent,
-    FormInputComponent
+    FormInputComponent,
+    FieldErrorDisplayComponent,
+    InputComponent,
+    ButtonComponent,
+    SelectComponent,
+    DynamicFieldDirective,
+    DynamicFormComponent,
+    TestComponent
   ],
   imports: [
     MatTableModule,
+    MaterialModule,
     BrowserModule,
     LayoutModule,
     BrowserAnimationsModule,
@@ -62,12 +74,17 @@ const appRoutes: Routes = [
     FormsModule,
     MatCardModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(appRoutes),
+    AppRoutingModule,
     HttpClientModule,
     CommonModule,
     MatSelectModule
   ],
   providers: [PetsService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    InputComponent,
+    ButtonComponent,
+    SelectComponent,
+  ]
 })
 export class AppModule { }

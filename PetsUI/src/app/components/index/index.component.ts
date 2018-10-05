@@ -16,7 +16,7 @@ export interface PeriodicElement {
 export class IndexComponent implements OnInit {
   
   servicios: PetsService;
-  displayedColumns: string[] = ['id', 'name', 'breed', 'age', 'origin', 'sex', 'species', 'diseases', 'description', 'state', 'created_at'];
+  displayedColumns: string[] = ['id', 'nombre', 'raza', 'edad', 'procedencia', 'sexo', 'especie', 'estado', 'created_at'];
   public dataSource:any;
 
   constructor(public serv: PetsService) { }

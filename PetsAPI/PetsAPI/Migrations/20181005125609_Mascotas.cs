@@ -14,12 +14,11 @@ namespace PetsAPI.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Nombre = table.Column<string>(nullable: false),
-                    Raza = table.Column<string>(nullable: false),
-                    Especie = table.Column<string>(nullable: false),
-                    Edad = table.Column<int>(nullable: false),
+                    Nombre = table.Column<string>(maxLength: 50, nullable: false),
+                    Raza = table.Column<string>(maxLength: 50, nullable: false),
+                    Especie = table.Column<string>(maxLength: 50, nullable: false),
+                    Edad = table.Column<string>(nullable: false),
                     Sexo = table.Column<string>(nullable: false),
-                    Origen = table.Column<string>(nullable: false),
                     Enfermedades = table.Column<string>(nullable: false),
                     Descripcion = table.Column<string>(nullable: true),
                     Procedencia = table.Column<string>(nullable: true),
