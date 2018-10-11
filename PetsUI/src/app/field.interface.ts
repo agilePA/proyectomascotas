@@ -3,6 +3,7 @@ export interface Validator {
   validator: any;
   message: string;
 }
+
 export interface FieldConfig {
   label?: string;
   name?: string;

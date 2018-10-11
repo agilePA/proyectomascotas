@@ -12,3 +12,4 @@ C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Debug\netcoreapp2.
 C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Debug\netcoreapp2.1\PetsAPI.RazorTargetAssemblyInfo.cache
 C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Debug\netcoreapp2.1\PetsAPI.dll
 C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Debug\netcoreapp2.1\PetsAPI.pdb
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

@@ -2,16 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IndexComponent } from './components/index/index.component';
-import { CreateComponent } from './components/create/create.component';
-import { TestComponent } from './components/test/test.component';
+import { CreatePetComponent } from './components/create_pet/create_pet.component';
 
 const routes: Routes = [
   {
     path: '',
     children: [
-      { path: 'list_pets', component: IndexComponent },
-      { path: 'create_pet', component: CreateComponent },
-      { path: 'test', component: TestComponent },
+      { path: 'lista_mascotas', component: IndexComponent },
+      { path: 'registrar_mascota', component: CreatePetComponent },
     ]
   }
 ];
@@ -20,4 +18,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

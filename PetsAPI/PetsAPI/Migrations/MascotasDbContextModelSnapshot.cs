@@ -30,7 +30,8 @@ namespace PetsAPI.Migrations
                     b.Property<string>("Descripcion");
 
                     b.Property<string>("Edad")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasMaxLength(50);
 
                     b.Property<string>("Enfermedades")
                         .IsRequired();
@@ -41,7 +42,8 @@ namespace PetsAPI.Migrations
 
                     b.Property<bool>("Estado");
 
-                    b.Property<string>("Imagen");
+                    b.Property<string>("Imagen")
+                        .IsRequired();
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -54,7 +56,8 @@ namespace PetsAPI.Migrations
                         .HasMaxLength(50);
 
                     b.Property<string>("Sexo")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasMaxLength(50);
 
                     b.Property<DateTime>("Updated_at");
 

@@ -1,0 +1,15 @@
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\bin\Release\netcoreapp2.1\PetsAPI.deps.json
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\bin\Release\netcoreapp2.1\PetsAPI.runtimeconfig.json
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\bin\Release\netcoreapp2.1\PetsAPI.runtimeconfig.dev.json
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\bin\Release\netcoreapp2.1\PetsAPI.dll
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\bin\Release\netcoreapp2.1\PetsAPI.pdb
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Release\netcoreapp2.1\PetsAPI.csprojAssemblyReference.cache
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Release\netcoreapp2.1\PetsAPI.csproj.CoreCompileInputs.cache
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Release\netcoreapp2.1\PetsAPI.RazorAssemblyInfo.cache
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Release\netcoreapp2.1\PetsAPI.RazorAssemblyInfo.cs
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Release\netcoreapp2.1\PetsAPI.AssemblyInfoInputs.cache
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Release\netcoreapp2.1\PetsAPI.AssemblyInfo.cs
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Release\netcoreapp2.1\PetsAPI.RazorTargetAssemblyInfo.cache
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Release\netcoreapp2.1\PetsAPI.dll
+C:\Users\carlos\projects\proyectomascotas\PetsAPI\PetsAPI\obj\Release\netcoreapp2.1\PetsAPI.pdb

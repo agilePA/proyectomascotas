@@ -6,21 +6,23 @@ import { PetsService } from '../../services/pets.service';
 import { Router } from "@angular/router";
 
 @Component({
-  selector: "app-test",
-  templateUrl: "./test.component.html",
-  styleUrls: ["./test.component.css"]
+  selector: "app-create-pet",
+  templateUrl: "./create_pet.component.html",
+  styleUrls: ["./create_pet.component.css"]
 })
-export class TestComponent {
+
+export class CreatePetComponent {
   
   constructor(private petServ: PetsService, private router: Router){};
 
   @ViewChild(DynamicFormComponent) form: DynamicFormComponent;
+  
   regConfig: FieldConfig[] = [
     {
-      type: "input",
       label: "Nombre",
-      inputType: "text",
       name: "nombre",
+      inputType: "text",
+      type: "input",
       validations: [
         {
           name: "required",
@@ -141,8 +143,8 @@ export class TestComponent {
   ];
 
   submit(value: any) {
-    console.log(this.form.form.value);
+    //console.log((this.form.form.value);
     this.petServ.add(this.form.form.value).subscribe();
-    location.reload();
+    //location.reload();
   }
 }

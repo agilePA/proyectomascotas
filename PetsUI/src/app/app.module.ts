@@ -26,7 +26,6 @@ import {
 
 import { AppRoutingModule } from './app-routing.module';
 import { IndexComponent } from './components/index/index.component';
-import { CreateComponent } from './components/create/create.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormInputComponent } from './components/form-input/form-input.component';
@@ -39,14 +38,13 @@ import { ButtonComponent } from "./components/button/button.component";
 import { SelectComponent } from "./components/select/select.component";
 import { DynamicFieldDirective } from "./components/dynamic-field/dynamic-field.directive";
 import { DynamicFormComponent } from "./components/dynamic-form/dynamic-form.component";
-import { TestComponent } from "./components/test/test.component";
+import { CreatePetComponent } from "./components/create_pet/create_pet.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     IndexComponent,
-    CreateComponent,
     FormInputComponent,
     FieldErrorDisplayComponent,
     InputComponent,
@@ -54,7 +52,7 @@ import { TestComponent } from "./components/test/test.component";
     SelectComponent,
     DynamicFieldDirective,
     DynamicFormComponent,
-    TestComponent
+    CreatePetComponent
   ],
   imports: [
     MatTableModule,
