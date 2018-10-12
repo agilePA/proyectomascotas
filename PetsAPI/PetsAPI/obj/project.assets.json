@@ -12218,23 +12218,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carlos\\.nuget\\packages\\": {},
+    "C:\\Users\\Mariola\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlos\\projects\\proyectomascotas\\PetsAPI\\PetsAPI\\PetsAPI.csproj",
+      "projectUniqueName": "D:\\ProcesosAgiles\\proyectomascotas\\PetsAPI\\PetsAPI\\PetsAPI.csproj",
       "projectName": "PetsAPI",
-      "projectPath": "C:\\Users\\carlos\\projects\\proyectomascotas\\PetsAPI\\PetsAPI\\PetsAPI.csproj",
-      "packagesPath": "C:\\Users\\carlos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlos\\projects\\proyectomascotas\\PetsAPI\\PetsAPI\\obj\\",
+      "projectPath": "D:\\ProcesosAgiles\\proyectomascotas\\PetsAPI\\PetsAPI\\PetsAPI.csproj",
+      "packagesPath": "C:\\Users\\Mariola\\.nuget\\packages\\",
+      "outputPath": "D:\\ProcesosAgiles\\proyectomascotas\\PetsAPI\\PetsAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mariola\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
