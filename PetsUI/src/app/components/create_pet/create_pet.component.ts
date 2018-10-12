@@ -31,7 +31,7 @@ export class CreatePetComponent {
         },
         {
           name: "pattern",
-          validator: Validators.pattern("^[a-zA-Z]+$"),
+          validator: Validators.pattern("^[a-zA-Z ]+$"),
           message: "Nombre solo debe contener texto"
         }
       ]
@@ -49,7 +49,7 @@ export class CreatePetComponent {
         },
         {
           name: "pattern",
-          validator: Validators.pattern("^[a-zA-Z]+$"),
+          validator: Validators.pattern("^[a-zA-Z ]+$"),
           message: "Raza solo debe contener texto"
         }
       ]
@@ -67,7 +67,7 @@ export class CreatePetComponent {
         },
         {
           name: "pattern",
-          validator: Validators.pattern("^[a-zA-Z]+$"),
+          validator: Validators.pattern("^[a-zA-Z ]+$"),
           message: "Especie solo debe contener texto"
         }
       ]
@@ -85,7 +85,7 @@ export class CreatePetComponent {
         },
         {
           name: "pattern",
-          validator: Validators.pattern("^(0|[1-9][0-9]*)$"),
+          validator: Validators.pattern("[a-zA-Z0-9 ]+"),
           message: "Edad solo debe contener numeros"
         }
       ]
@@ -144,7 +144,18 @@ export class CreatePetComponent {
 
   submit(value: any) {
     //console.log((this.form.form.value);
-    this.petServ.add(this.form.form.value).subscribe();
+    this.petServ.add(this.form.form.value).subscribe(
+      data => {
+        var url = window.location.protocol+"//"+window.location.host+"/lista_mascotas";
+        window.location.replace(url);
+        //location.reload();
+      },
+      error => {
+        if (error.error) {
+          console.log(error.error);
+        }
+      }
+    );
     //location.reload();
   }
 }
