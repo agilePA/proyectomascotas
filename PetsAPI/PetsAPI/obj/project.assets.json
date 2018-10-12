@@ -7055,7 +7055,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.1": {
-      "sha512": "Su++Q22kR3EaWmg7flhuAX0xZFPVL4z99HYc9CNQZksi4L/lCzxyIRXJUV3qTEyyX8wkl6sx3RDVUcYcBTdjlg==",
+      "sha512": "mlO1U3Bt05P/oDa0STUtV6mOKlsXyCO2Nu0YKYmuhLxSw8sN6XMQ7ucoHA4YP3d/lVLvqRWnlEy8H8/AH21dOw==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.contracts/2.1.1",
       "files": [
@@ -12218,23 +12218,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mauricio\\.nuget\\packages\\": {},
+    "C:\\Users\\Mariola\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mauricio\\Desktop\\angular2018\\procesos agiles\\ProcesosAgiles\\PetsAPI\\PetsAPI\\PetsAPI.csproj",
+      "projectUniqueName": "D:\\ProcesosAgiles\\proyectomascotas\\PetsAPI\\PetsAPI\\PetsAPI.csproj",
       "projectName": "PetsAPI",
-      "projectPath": "C:\\Users\\Mauricio\\Desktop\\angular2018\\procesos agiles\\ProcesosAgiles\\PetsAPI\\PetsAPI\\PetsAPI.csproj",
-      "packagesPath": "C:\\Users\\Mauricio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mauricio\\Desktop\\angular2018\\procesos agiles\\ProcesosAgiles\\PetsAPI\\PetsAPI\\obj\\",
+      "projectPath": "D:\\ProcesosAgiles\\proyectomascotas\\PetsAPI\\PetsAPI\\PetsAPI.csproj",
+      "packagesPath": "C:\\Users\\Mariola\\.nuget\\packages\\",
+      "outputPath": "D:\\ProcesosAgiles\\proyectomascotas\\PetsAPI\\PetsAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Mauricio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mariola\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

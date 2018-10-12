@@ -4,14 +4,18 @@
   <mat-card-title>
     Registro de Mascotas
   </mat-card-title>
+  <!--
 
-  <mat-card-content>
+  <input type="file" (change)="onFileSelected($event)">
+  -->
+  <br>
+  <mat-card-content [formGroup]="formulario" (ngSubmit)="onSubmit()">
     <mat-form-field class="full-width-input">
-      <input matInput placeholder="Nombre" 
+      <input matInput placeholder="Nombre" formControlName="nombre" 
       type="text" name="nombre" [(ngModel)]="mascota.nombre"/>
     </mat-form-field>
     <mat-form-field>
-        <mat-select placeholder="Especie" [(ngModel)]="mascota.especie">
+        <mat-select placeholder="Especie" [(ngModel)]="mascota.especie" formControlName="especie" > 
           <mat-option *ngFor="let esp of especies" [value]="esp">
             {{esp}}
           </mat-option>
@@ -19,30 +23,30 @@
       </mat-form-field>
 
     <mat-form-field class="full-width-input">
-      <input matInput placeholder="Raza" 
+      <input matInput placeholder="Raza" formControlName="raza" 
       type="text" name="raza" [(ngModel)]="mascota.raza"/>
     </mat-form-field>
     <mat-form-field class="full-width-input">
-      <input matInput placeholder="Edad" 
+      <input matInput placeholder="Edad" formControlName="edad" 
       type="number" name="edad" [(ngModel)]="mascota.edad"/>
     </mat-form-field>
     <mat-form-field>
-        <mat-select placeholder="Sexo" [(ngModel)]="mascota.sexo">
+        <mat-select placeholder="Sexo" [(ngModel)]="mascota.sexo" formControlName="sexo">
           <mat-option *ngFor="let sex of sexos" [value]="sex">
             {{sex}}
           </mat-option>
         </mat-select>
       </mat-form-field>
     <mat-form-field class="full-width-input">
-      <input matInput placeholder="Origen" 
+      <input matInput placeholder="Origen" formControlName="origen" 
       type="text" name="origen" [(ngModel)]="mascota.procedencia"/>
     </mat-form-field>
     <mat-form-field class="full-width-input">
-      <input matInput placeholder="Enfermedades" 
+      <input matInput placeholder="Enfermedades" formControlName="enfermedades" 
       type="text" name="enfermedades" [(ngModel)]="mascota.enfermedades"/>
     </mat-form-field>
     <mat-form-field class="full-width-input">
-      <input matInput placeholder="Descripcion" 
+      <input matInput placeholder="Descripcion" formControlName="descripcion" 
       type="text" name="descripcion" [(ngModel)]="mascota.descripcion"/>
     </mat-form-field>
    
@@ -50,8 +54,8 @@
 
   <mat-card-actions class="card-action">
     <button mat-stroked-button 
-    color="primary" (click)="yesAction()">Aceptar</button>
-    <button *ngIf="mascota.sexo && mascota.edad " mat-stroked-button 
+    color="primary" [disabled]="!formulario.valid" (click)="yesAction()">Aceptar</button>
+    <button mat-stroked-button 
     color="primary" >Cancelar</button>
   </mat-card-actions>
 
