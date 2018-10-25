@@ -5,7 +5,7 @@ El pryecto fue generado con [Angular CLI](https://github.com/angular/angular-cli
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.<br />
 Ejecuta `ng serve` para ver el servidor. Dirijase a un navegador con la url `http://localhost:4200/`. La aplicación se volverá a cargar automáticamente si cambia alguno de los archivos de origen. 
 
 ## Code scaffolding
