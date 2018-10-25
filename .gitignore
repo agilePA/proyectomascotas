@@ -1,41 +1,41 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-PetsUI/dist
-PetsUI/tmp
-PetsUI/out-tsc
+mascotas/dist
+mascotas/tmp
+mascotas/out-tsc
 
 # dependencies
-PetsUI/node_modules
+mascotas/node_modules
 
 # IDEs and editors
-PetsUI/.idea
-PetsUI/.project
-PetsUI/.classpath
-PetsUI/.c9/
-PetsUI/*.launch
-PetsUI/.settings/
-PetsUI/*.sublime-workspace
+mascotas/.idea
+mascotas/.project
+mascotas/.classpath
+mascotas/.c9/
+mascotas/*.launch
+mascotas/.settings/
+mascotas/*.sublime-workspace
 
 # IDE - VSCode
-PetsUI/.vscode/*
-PetsUI/!.vscode/settings.json
-PetsUI/!.vscode/tasks.json
-PetsUI/!.vscode/launch.json
-PetsUI/!.vscode/extensions.json
+mascotas/.vscode/*
+mascotas/!.vscode/settings.json
+mascotas/!.vscode/tasks.json
+mascotas/!.vscode/launch.json
+mascotas/!.vscode/extensions.json
 
 # misc
-PetsUI/.sass-cache
-PetsUI/connect.lock
-PetsUI/coverage
-PetsUI/libpeerconnection.log
-PetsUI/npm-debug.log
-PetsUI/yarn-error.log
-PetsUI/testem.log
-PetsUI/typings
+mascotas/.sass-cache
+mascotas/connect.lock
+mascotas/coverage
+mascotas/libpeerconnection.log
+mascotas/npm-debug.log
+mascotas/yarn-error.log
+mascotas/testem.log
+mascotas/typings
 
 # System Files
-PetsUI/.DS_Store
-PetsUI/Thumbs.db
+mascotas/.DS_Store
+mascotas/Thumbs.db
 
 PetsAPI/.vs/*
